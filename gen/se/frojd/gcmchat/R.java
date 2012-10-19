@@ -14,10 +14,13 @@ public final class R {
         public static final int ic_action_search=0x7f020000;
         public static final int ic_launcher=0x7f020001;
     }
+    public static final class integer {
+        public static final int samle_integer_var=0x7f030000;
+    }
     public static final class string {
-        public static final int app_name=0x7f030000;
+        public static final int app_name=0x7f040000;
     }
     public static final class style {
-        public static final int AppTheme=0x7f040000;
+        public static final int AppTheme=0x7f050000;
     }
 }
