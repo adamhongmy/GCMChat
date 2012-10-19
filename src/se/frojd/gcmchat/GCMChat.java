@@ -33,7 +33,7 @@ public class GCMChat extends Activity {
 		Log.i(debugAppTag, "registration id ==  " + regId);
 		
 		if (regId.equals("")) {
-			GCMRegistrar.register(this, DeviceUUIDFactory.getUUID());
+			GCMRegistrar.register(this, ApplicationContext.getSenderID());
 		}
 		else {
 			Log.v(debugAppTag, "Already registered");

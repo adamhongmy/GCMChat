@@ -7,6 +7,8 @@ import android.content.SharedPreferences;
 
 public class ApplicationContext extends Application
 {
+	private static final String SENDER_ID = "416935735819";
+	
     private static ApplicationContext instance 	= null;
     public static SharedPreferences gcmcGeneralSharedPreferences;
     private static int activity_private_mode 	= Activity.MODE_PRIVATE;
@@ -74,4 +76,9 @@ public class ApplicationContext extends Application
 		gcmcPreferencesEditor.putInt(key, value);
 		gcmcPreferencesEditor.commit();
     }
+    
+    public static String getSenderID() {
+    	return "416935735819";
+    }
+
 }
