@@ -30,10 +30,10 @@ public class GCMChat extends Activity {
 		btn_read_more_button = (Button) findViewById(R.id.read_more_button);
 		
 		final String regId = GCMRegistrar.getRegistrationId(this);
-		Log.i(debugAppTag, "registration id =====  "+regId);
+		Log.i(debugAppTag, "registration id ==  " + regId);
 		
 		if (regId.equals("")) {
-			GCMRegistrar.register(this, "SOME_UNIQUE_SENDER_ID");
+			GCMRegistrar.register(this, DeviceUUIDFactory.getUUID());
 		}
 		else {
 			Log.v(debugAppTag, "Already registered");
